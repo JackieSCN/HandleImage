@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 
 import com.jc.main.R;
+import com.jc.main.util.ImageHelper;
 
 public class PrimaryClass extends Activity implements SeekBar.OnSeekBarChangeListener {
     private static final int MAX_VALUE = 256;
@@ -70,5 +71,12 @@ public class PrimaryClass extends Activity implements SeekBar.OnSeekBarChangeLis
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mBitmap.recycle();
+        mBitmap = null;
     }
 }

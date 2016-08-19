@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".handle_argb.PrimaryClass"></activity>
         <activity android:name=".handle_matrix.MatrixActivity"></activity>
+        <activity android:name=".handle_pixel.PixelActivity"></activity>
     </application>
 
 </manifest>

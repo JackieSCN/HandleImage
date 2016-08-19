@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.jc.main.handle_argb.PrimaryClass;
 import com.jc.main.handle_matrix.MatrixActivity;
+import com.jc.main.handle_pixel.PixelActivity;
 
 public class MainActivity extends Activity {
 
@@ -22,5 +23,9 @@ public class MainActivity extends Activity {
 
     public void handleMatrix(View view) {
         startActivity(new Intent(this, MatrixActivity.class));
+    }
+
+    public void handlePixel(View view) {
+        startActivity(new Intent(this, PixelActivity.class));
     }
 }

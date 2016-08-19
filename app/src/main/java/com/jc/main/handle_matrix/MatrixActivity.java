@@ -112,4 +112,10 @@ public class MatrixActivity extends Activity {
         mImageview.setImageBitmap(bmp);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mBitmap.recycle();
+        mBitmap = null;
+    }
 }
