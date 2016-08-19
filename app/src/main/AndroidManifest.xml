@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".handle_argb.PrimaryClass"></activity>
+        <activity android:name=".handle_matrix.MatrixActivity"></activity>
     </application>
 
 </manifest>

@@ -25,10 +25,11 @@
         android:onClick="handleArgb"
         />
     <Button
-        android:id="@+id/aa"
+        android:id="@+id/handle_matrix"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="argb"
+        android:text="matrix"
+        android:onClick="handleMatrix"
         />
     <Button
         android:id="@+id/bb"

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.jc.main.handle_argb.PrimaryClass;
+import com.jc.main.handle_matrix.MatrixActivity;
 
 public class MainActivity extends Activity {
 
@@ -15,7 +16,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
-    public void handleArgb(View view){
+    public void handleArgb(View view) {
         startActivity(new Intent(this, PrimaryClass.class));
+    }
+
+    public void handleMatrix(View view) {
+        startActivity(new Intent(this, MatrixActivity.class));
     }
 }
