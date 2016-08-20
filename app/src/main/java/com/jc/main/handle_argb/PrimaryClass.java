@@ -11,7 +11,7 @@ import com.jc.main.R;
 import com.jc.main.util.ImageHelper;
 
 public class PrimaryClass extends Activity implements SeekBar.OnSeekBarChangeListener {
-    private static final int MAX_VALUE = 256;
+    private static final int MAX_VALUE = 255;
     private static final int MID_VALUE = 127;
     private ImageView mImageview;
     private SeekBar mHueSeekbar, mSatSeekbar, mLumSeekbar;
@@ -30,15 +30,15 @@ public class PrimaryClass extends Activity implements SeekBar.OnSeekBarChangeLis
         mHueSeekbar = (SeekBar) findViewById(R.id.primary_hue_seekbar);
         mSatSeekbar = (SeekBar) findViewById(R.id.primary_sat_seekbar);
         mLumSeekbar = (SeekBar) findViewById(R.id.primary_lum_seekbar);
-        mHueSeekbar.setOnSeekBarChangeListener(this);
-        mSatSeekbar.setOnSeekBarChangeListener(this);
-        mLumSeekbar.setOnSeekBarChangeListener(this);
         mHueSeekbar.setMax(MAX_VALUE);
         mSatSeekbar.setMax(MAX_VALUE);
         mLumSeekbar.setMax(MAX_VALUE);
         mHueSeekbar.setProgress(MID_VALUE);
         mSatSeekbar.setProgress(MID_VALUE);
         mLumSeekbar.setProgress(MID_VALUE);
+        mHueSeekbar.setOnSeekBarChangeListener(this);
+        mSatSeekbar.setOnSeekBarChangeListener(this);
+        mLumSeekbar.setOnSeekBarChangeListener(this);
     }
 
     private void initImageview() {

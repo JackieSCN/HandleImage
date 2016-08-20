@@ -12,6 +12,14 @@ import android.graphics.Paint;
  */
 public class ImageHelper {
 
+    /**
+     * 利用 rgba 来修改图片
+     * @param bm            所需修改的图片
+     * @param hue           色调值
+     * @param saturation    饱和度
+     * @param lum           亮度
+     * @return              修改完成的图片
+     */
     public static Bitmap getHandleImageForARGB(Bitmap bm, float hue, float saturation, float lum) {
         Bitmap bmp = Bitmap.createBitmap(bm.getWidth(), bm.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bmp);
